@@ -23,10 +23,7 @@ SCHEMES = [
 @app.route('/<path:_type>', methods=['POST'])
 def convert(_type):
     if _type not in SCHEMES:
-        return jsonify({
-            'title': 'Error occured',
-            'content': 'Wrong conversion scheme specified.',
-        }), 400
+        _type = "t2s"
 
     try:
         cc = opencc.OpenCC(f'{_type}.json')
