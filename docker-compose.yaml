@@ -1,0 +1,7 @@
+services:
+  opencc-api-server:
+    image: 1andonli/ya-opencc-api-server
+    container_name: opencc
+    ports:
+      - "5000:5000"
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+[project]
+name = "YA-OpenCC-API"
+version = "0.1.0"
+description = "Yet another OpenCC API server."
+authors = [
+    {name = "Landon Li", email = "github@landon.li"},
+]
+dependencies = [
+    "flask>=3.0.3",
+    "gunicorn>=23.0.0",
+    "opencc>=1.1.9",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+
+
+[tool.pdm]
+distribution = false
